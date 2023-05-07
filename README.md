@@ -1,3 +1,3 @@
 # CodeWars-Katas
 
-Python Scripts from Codewars and leetcodes
+Python Scripts from my Codewars and leetcodes
