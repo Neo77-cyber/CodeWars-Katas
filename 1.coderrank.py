@@ -1,13 +1,4 @@
-# user_name = input("Username")
-# age = input("Age")
-# # current year - age + 100
-
-# age_program = int(age) + 100 + 2022
-
-
-
-# value of n + nn + nnn 
-# valid triangle 
+# Find letter 'n' in a List
 
 def find_needle(haystack):
     for i in haystack:
@@ -18,22 +9,42 @@ def find_needle(haystack):
 
 print(find_needle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
+
+
+
+
+# Operations 
+
 def past(h, m, s):
     return (h *3600000 + m*60000 + 1 * 1000)
 print(past(0,1,1))
+
+
+
+
+
+# Make a string uppercase
 
 def make_upper_case(s):
     return s.upper()
 print(make_upper_case("learn"))
 
-def cockroach_speed(s):
-    return int(s*27.778)
-print(cockroach_speed(1.08))
+
+
+
+
+# Repeat strings
 
 def repeat_str(repeat, string):
     # duplicate the string for a number of times
     return string * repeat
 print(repeat_str(6,"hello"))
+
+
+
+
+
+# Product of all the numbers in a list
 
 def grow(arr):
     product = 1
@@ -41,6 +52,12 @@ def grow(arr):
         product *= i
     return product
 print(grow([1,2,3,4,5]))
+
+
+
+
+
+# Positive sum of numbers in a list
 
 def positive_sum(arr):
     sum = 0
@@ -51,12 +68,11 @@ def positive_sum(arr):
         
 print(positive_sum([1,-4,7,12]))
 
-def simple_multiplication(number):
-    if number % 2 == 0:
-        return number * 8
-    else:
-        return number * 9
-print(simple_multiplication(13))
+
+
+
+
+# Reverse squnece of a list
 
 def reverse_seq(n):
     output = []
@@ -66,10 +82,11 @@ def reverse_seq(n):
     return output
 print(reverse_seq(7))
 
-def reverseseq(n):
-    return range(n, 0, -1)
 
-print(reverse_seq(7))
+
+
+
+# sSummation of numbers
 
 def summation(num):
     output = []
@@ -79,40 +96,42 @@ def summation(num):
     return sum(output)
 print(summation(2))
 
-def summation(num):
-    total = 0
-    for i in range(0, num+1):
-                                                        
-        total = total + i
-    return total
-    
+
+
+
+# replacing/removing a letter in a string
+
 def remove_exclamation_marks(s):
-                                                        # replacing/removing a letter in a string
+                                                        
     return s.replace('!', '')
 
-def update_light(current):
-    if current == "green":
-        return "yellow"
-    elif current == "yellow":
-        return "red"
-    elif current == "red":
-        return "green"
-    else:
-        return "This is not a traffic light color."
 
-print(update_light("green"))
+
+
         
+# Mask letters in a string 
+
 def maskify(cc):
     return len(cc[:-4])*"#" + cc[-4:] 
-                                                        # using len
+                                                       
 print(maskify("Newstataus@12"))
 
-def find_smallest_int(arr):
-    
-                                                        # minimum i
+
+
+
+
+# Get the minimum
+
+def find_smallest_int(arr):                                             
         return min(arr)
 
 print(find_smallest_int([34, -345, -1, 100]))
+
+
+
+
+
+# Find the next square
 
 from math import sqrt
 from this import s
@@ -126,19 +145,24 @@ def find_next_square(sq):
         return -1
 print(find_next_square(144))
 
-def greet(name):
 
-    return f"Hello, {name} how are you doing today?"
 
-print(greet("Neo"))
+
+
+# returns the first number as an integer
 
 def get_age(age):
-   # returns the first number as an integer
-
+   
     x= age.split()
     return int(x[0])
 
 print(get_age("1 years old"))
+
+
+
+
+
+# Make a sentence upper case
 
 import string
 
@@ -147,6 +171,13 @@ def to_jaden_case(my_text):
     return string.capwords(my_text)
 
 print(to_jaden_case("How can mirrors be real if our eyes aren't real"))
+
+
+
+
+
+
+# Filter list for integers 
 
 def filter_list(l):
     new_list =[]
@@ -157,24 +188,60 @@ def filter_list(l):
 
 print(filter_list([1,2,'a','b']))
 
-def is_uppercase(letter):
-    if letter.upper()==letter:
-        return True
-    else:
-        return False
 
-print(is_uppercase('$3$'))
 
-geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
-def goose_filter(birds):
-    empty_list = []
+
+
+
+# Sorting strings 
+
+def longest(a1, a2):
+    return "".join(sorted(set(a1 + a2)))
+
+print(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"))
+
+
+   
     
-    if geese in birds:
-            empty_list.pop(birds)
-        
-       
 
-print(geese('pigeoon', 'bird', 'donkey'))
+def nb_year(p0, percent, aug, p):
+    # how many years will it take to be 1200
+    x = p0 + percent/100 + aug
+    while x >= p:
+        print(x)
+print(nb_year(1000, 2, 50, 1200))
+
+
+
+
+
+    
+    
+    
+
+
+    
+        
+            
+
+
+
+
+             
+    
+
+
+    
+
+    
+    
+
+
+
+    
+
+    
+
 
 
 
